@@ -1,5 +1,8 @@
 # Портфолио
 
+**Сайт:** https://noovosadovpavel.github.io/portfolio/
+**Репозиторий:** https://github.com/NoovosadovPavel/portfolio
+
 Одностраничный сайт-портфолио на чистом HTML, CSS и JavaScript. Без сборщиков и зависимостей — открывается двойным кликом по `index.html` и хостится на GitHub Pages.
 
 ## Особенности

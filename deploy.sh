@@ -20,12 +20,11 @@ if ! command -v gh >/dev/null 2>&1; then
   exit 1
 fi
 
-if ! gh auth status >/dev/null 2>&1; then
-  echo "✗ Нет авторизации в GitHub. Выполните: gh auth login"
+OWNER="$(gh api user -q .login 2>/dev/null || true)"
+if [ -z "$OWNER" ]; then
+  echo "✗ Нет доступа к GitHub. Выполните: gh auth login"
   exit 1
 fi
-
-OWNER="$(gh api user -q .login)"
 echo "→ Аккаунт: $OWNER"
 
 # --- git -------------------------------------------------------------------
