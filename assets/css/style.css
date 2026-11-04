@@ -567,6 +567,84 @@ ul { list-style: none; padding: 0; }
 .skill-card:hover .tags li { color: var(--text); border-color: var(--border-strong); }
 .tags--sm li { font-size: 12px; padding: 4px 10px; }
 
+/* ---------- Education ---------- */
+.edu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 52px 64px;
+  align-items: start;
+}
+.edu__group { min-width: 0; }
+.edu__title {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  padding-bottom: 14px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.timeline { position: relative; padding-left: 28px; }
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--border-strong), transparent 92%);
+}
+
+.tl-item { position: relative; padding-bottom: 22px; }
+.tl-item:last-child { padding-bottom: 0; }
+.tl-item::before {
+  content: "";
+  position: absolute;
+  left: -28px;
+  top: 7px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 2px solid var(--accent-2);
+  box-shadow: 0 0 0 4px rgba(67, 217, 196, 0.1);
+}
+.section--alt .tl-item::before { background: var(--bg-alt); }
+
+.tl-item__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px;
+}
+.tl-item__name {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.42;
+  letter-spacing: -0.01em;
+  text-wrap: pretty;
+}
+.tl-item__year {
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--accent-2);
+}
+.tl-item__org {
+  margin-top: 4px;
+  font-size: 13.5px;
+  color: var(--text-muted);
+}
+.tl-item__note {
+  margin-top: 5px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
 /* ---------- Projects ---------- */
 .projects { display: grid; gap: 68px; }
 
@@ -705,6 +783,7 @@ ul { list-style: none; padding: 0; }
 @media (max-width: 900px) {
   .about { grid-template-columns: 1fr; gap: 36px; }
   .skills { grid-template-columns: 1fr; }
+  .edu { grid-template-columns: 1fr; gap: 40px; }
   .project,
   .project--reverse .project__media {
     grid-template-columns: 1fr;

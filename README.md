@@ -48,6 +48,7 @@ python3 -m http.server 8000
 | Имя, заголовок, описание | `index.html`, теги `<title>`, `<meta name="description">`, секция `hero` |
 | Текст «О себе» и факты | `index.html`, секция `#about` |
 | Навыки | `index.html`, секция `#skills` |
+| Курсы и обучение | `index.html`, секция `#education` |
 | Проекты | `index.html`, секция `#projects` |
 | Контакты и соцсети | `index.html`, секция `#contact` |
 | Цвета и шрифты | `assets/css/style.css`, блок `:root` |
