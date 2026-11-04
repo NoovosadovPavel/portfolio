@@ -335,11 +335,11 @@ ul { list-style: none; padding: 0; }
 }
 
 .hero__title {
-  font-size: clamp(2.1rem, 6vw, 4.3rem);
+  font-size: clamp(2rem, 5.2vw, 3.7rem);
   font-weight: 800;
-  line-height: 1.06;
+  line-height: 1.1;
   letter-spacing: -0.035em;
-  max-width: 19ch;
+  max-width: 26ch;
   text-wrap: balance;
 }
 

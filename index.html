@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Александр Иванов — Frontend-разработчик</title>
-  <meta name="description" content="Портфолио frontend-разработчика: проекты, навыки и контакты. Быстрые интерфейсы, аккуратный код, внимание к деталям." />
-  <meta name="author" content="Александр Иванов" />
+  <title>Павел Новосадов — инженер по медицинскому оборудованию</title>
+  <meta name="description" content="Портфолио инженера по медицинскому оборудованию: обслуживание и ремонт диагностической и лечебной техники, ввод в эксплуатацию, метрологический контроль." />
+  <meta name="author" content="Павел Новосадов" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Александр Иванов — Frontend-разработчик" />
-  <meta property="og:description" content="Портфолио frontend-разработчика: проекты, навыки и контакты." />
+  <meta property="og:title" content="Павел Новосадов — инженер по медицинскому оборудованию" />
+  <meta property="og:description" content="Обслуживание и ремонт медицинской техники, ввод в эксплуатацию, метрологический контроль." />
   <meta property="og:image" content="assets/img/og-cover.png" />
+  <meta property="og:url" content="https://noovosadovpavel.github.io/portfolio/" />
   <meta name="twitter:card" content="summary_large_image" />
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
@@ -18,6 +19,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Павел Новосадов",
+    "jobTitle": "Инженер по медицинскому оборудованию",
+    "url": "https://noovosadovpavel.github.io/portfolio/",
+    "knowsAbout": [
+      "Медицинское оборудование",
+      "Метрология",
+      "Техническое обслуживание",
+      "Электробезопасность"
+    ]
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Перейти к содержимому</a>
@@ -27,14 +44,14 @@
   <header class="header" id="header">
     <div class="container header__inner">
       <a class="logo" href="#top" aria-label="На главную">
-        <span class="logo__mark">АИ</span>
-        <span class="logo__text">alexivanov<span class="logo__dot">.</span>dev</span>
+        <span class="logo__mark">ПН</span>
+        <span class="logo__text">novosadov<span class="logo__dot">.</span>med</span>
       </a>
 
       <nav class="nav" id="nav" aria-label="Основная навигация">
         <a href="#about" class="nav__link">О себе</a>
         <a href="#skills" class="nav__link">Навыки</a>
-        <a href="#projects" class="nav__link">Проекты</a>
+        <a href="#projects" class="nav__link">Опыт</a>
         <a href="#contact" class="nav__link">Контакты</a>
       </nav>
 
@@ -62,29 +79,30 @@
       <div class="container hero__inner">
         <p class="hero__badge reveal">
           <span class="status-dot" aria-hidden="true"></span>
-          Открыт к предложениям
+          Рассматриваю предложения
         </p>
 
         <h1 class="hero__title reveal" style="--delay: 60ms">
-          Привет, я <span class="gradient-text">Александр</span><br />
-          собираю интерфейсы,<br />
-          которыми приятно пользоваться
+          Привет, я <span class="gradient-text">Павел</span><br />
+          держу медицинскую технику
+          в&nbsp;рабочем строю
         </h1>
 
         <p class="hero__lead reveal" style="--delay: 120ms">
-          Frontend-разработчик с 5-летним опытом. Превращаю макеты в быстрые,
-          доступные и аккуратные интерфейсы на&nbsp;JavaScript и&nbsp;React.
+          Инженер по медицинскому оборудованию с 7&#8209;летним опытом. Обслуживаю
+          и ремонтирую диагностическую и лечебную технику, провожу
+          приёмо&#8209;сдаточные испытания и метрологический контроль.
         </p>
 
         <div class="hero__cta reveal" style="--delay: 180ms">
-          <a class="btn btn--primary" href="#projects">Смотреть проекты</a>
+          <a class="btn btn--primary" href="#projects">Смотреть опыт</a>
           <a class="btn btn--ghost" href="#contact">Связаться</a>
         </div>
 
         <ul class="hero__stats reveal" style="--delay: 240ms">
-          <li><strong>5+</strong><span>лет опыта</span></li>
-          <li><strong>30+</strong><span>проектов</span></li>
-          <li><strong>12</strong><span>клиентов</span></li>
+          <li><strong>7+</strong><span>лет опыта</span></li>
+          <li><strong>400+</strong><span>единиц техники</span></li>
+          <li><strong>25</strong><span>медучреждений</span></li>
         </ul>
       </div>
 
@@ -102,29 +120,32 @@
         <div class="about">
           <div class="about__text reveal">
             <p>
-              Меня зовут Александр. Последние несколько лет я разрабатываю веб-приложения:
-              от лендингов до админ-панелей с&nbsp;десятками тысяч пользователей.
+              Меня зовут Павел Новосадов, я инженер по медицинскому оборудованию.
+              Работаю с парком диагностической и лечебной техники в клиниках
+              и лабораториях: от ввода в эксплуатацию до планового обслуживания
+              и ремонта.
             </p>
             <p>
-              Люблю чистую архитектуру, осмысленные анимации и&nbsp;код, который легко
-              поддерживать через полгода. Внимательно отношусь к&nbsp;доступности
-              и&nbsp;производительности — интерфейс должен быть быстрым на&nbsp;любом устройстве.
+              Разбираюсь в схемотехнике, пневматике и гидравлике медицинских систем,
+              работаю с сервисной документацией производителей. Провожу измерения
+              электрической безопасности и контролирую соответствие оборудования
+              требованиям ТР ЕАЭС 040/2016 и ГОСТ ISO 13485.
             </p>
             <p>
-              Вне работы — читаю про типографику, собираю pet-проекты и&nbsp;иногда пишу
-              заметки о&nbsp;frontend-разработке.
+              В работе ценю предсказуемость: диагностика по фактам, понятные отчёты,
+              честные сроки. Чем меньше техника простаивает — тем лучше для пациентов.
             </p>
-            <a class="link-arrow" href="#contact">Обсудить проект <span aria-hidden="true">→</span></a>
+            <a class="link-arrow" href="#contact">Обсудить сотрудничество <span aria-hidden="true">→</span></a>
           </div>
 
           <div class="about__card reveal" style="--delay: 80ms">
             <div class="about__avatar">
-              <img src="assets/img/avatar.svg" alt="Портрет Александра" width="120" height="120" loading="lazy" />
+              <img src="assets/img/avatar.svg" alt="Портрет Павла Новосадова" width="120" height="120" loading="lazy" />
             </div>
             <dl class="facts">
-              <div><dt>Локация</dt><dd>Москва · удалённо</dd></div>
-              <div><dt>Опыт</dt><dd>5 лет коммерческой разработки</dd></div>
-              <div><dt>Стек</dt><dd>TypeScript · React · Node.js</dd></div>
+              <div><dt>Локация</dt><dd>Минск · выезды по Беларуси</dd></div>
+              <div><dt>Опыт</dt><dd>7 лет в сервисе медтехники</dd></div>
+              <div><dt>Специализация</dt><dd>Диагностическое и лечебное оборудование</dd></div>
               <div><dt>Языки</dt><dd>Русский · English (B2)</dd></div>
             </dl>
           </div>
@@ -142,96 +163,87 @@
 
         <div class="skills">
           <article class="skill-card reveal">
-            <h3>Frontend</h3>
+            <h3>Оборудование</h3>
             <ul class="tags">
-              <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>TypeScript</li>
-              <li>React</li><li>Next.js</li><li>Vite</li><li>Tailwind</li>
+              <li>УЗИ</li><li>Рентген</li><li>КТ</li><li>МРТ</li>
+              <li>ИВЛ</li><li>Наркозно-дыхательные</li><li>Мониторы пациента</li>
+              <li>Инфузионные насосы</li><li>Лабораторные анализаторы</li>
             </ul>
           </article>
 
           <article class="skill-card reveal" style="--delay: 60ms">
-            <h3>Backend &amp; API</h3>
+            <h3>Метрология и безопасность</h3>
             <ul class="tags">
-              <li>Node.js</li><li>Express</li><li>REST</li><li>GraphQL</li>
-              <li>PostgreSQL</li><li>Prisma</li>
+              <li>Поверка</li><li>Калибровка</li><li>Электробезопасность</li>
+              <li>Дозиметрия</li><li>Входной контроль</li><li>ПНР</li>
             </ul>
           </article>
 
           <article class="skill-card reveal" style="--delay: 120ms">
-            <h3>Инструменты</h3>
+            <h3>Нормы и документация</h3>
             <ul class="tags">
-              <li>Git</li><li>GitHub Actions</li><li>Docker</li><li>Figma</li>
-              <li>Jest</li><li>Playwright</li>
+              <li>ТР ЕАЭС 040/2016</li><li>ГОСТ ISO 13485</li><li>ГОСТ ISO 9001</li>
+              <li>Сервисные акты</li><li>Графики ТО</li><li>Формуляры</li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- PROJECTS -->
+    <!-- EXPERIENCE -->
     <section class="section" id="projects">
       <div class="container">
         <div class="section__head reveal">
-          <span class="section__kicker">03 — Проекты</span>
-          <h2 class="section__title">Избранные работы</h2>
+          <span class="section__kicker">03 — Опыт</span>
+          <h2 class="section__title">Из практики</h2>
         </div>
 
         <div class="projects">
           <article class="project reveal">
-            <a class="project__media" href="#" aria-label="Открыть проект Nimbus Analytics">
-              <img src="assets/img/project-1.svg" alt="Превью проекта Nimbus Analytics" loading="lazy" />
+            <a class="project__media" href="#contact" aria-label="Обсудить проект оснащения кабинета КТ">
+              <img src="assets/img/project-1.svg" alt="Схема компьютерного томографа" loading="lazy" />
             </a>
             <div class="project__body">
-              <div class="project__meta"><span>2025</span> · <span>Веб-приложение</span></div>
-              <h3 class="project__title">Nimbus Analytics</h3>
+              <div class="project__meta"><span>2024</span> · <span>Ввод в эксплуатацию</span></div>
+              <h3 class="project__title">Оснащение кабинета КТ</h3>
               <p class="project__desc">
-                Дашборд аналитики в реальном времени: интерактивные графики,
-                фильтры и экспорт отчётов. Перевёл легаси-код на TypeScript и ускорил
-                первую отрисовку в 2,4 раза.
+                Приёмка, монтаж и запуск компьютерного томографа: контроль помещения
+                и радиационной защиты, приёмо-сдаточные испытания, обучение персонала.
+                Вышли на штатный режим за три недели вместо плановых пяти.
               </p>
-              <ul class="tags tags--sm"><li>React</li><li>TypeScript</li><li>D3</li></ul>
-              <div class="project__links">
-                <a href="#" class="link-arrow">Демо <span aria-hidden="true">↗</span></a>
-                <a href="#" class="link-arrow">Код <span aria-hidden="true">↗</span></a>
-              </div>
+              <ul class="tags tags--sm"><li>КТ</li><li>ПНР</li><li>Радиационный контроль</li></ul>
             </div>
           </article>
 
           <article class="project project--reverse reveal" style="--delay: 60ms">
-            <a class="project__media" href="#" aria-label="Открыть проект Aurora Store">
-              <img src="assets/img/project-2.svg" alt="Превью проекта Aurora Store" loading="lazy" />
+            <a class="project__media" href="#contact" aria-label="Обсудить обслуживание парка ИВЛ">
+              <img src="assets/img/project-2.svg" alt="Панель аппарата искусственной вентиляции лёгких" loading="lazy" />
             </a>
             <div class="project__body">
-              <div class="project__meta"><span>2024</span> · <span>E-commerce</span></div>
-              <h3 class="project__title">Aurora Store</h3>
+              <div class="project__meta"><span>2023</span> · <span>Сервисное обслуживание</span></div>
+              <h3 class="project__title">Парк ИВЛ: плановое ТО</h3>
               <p class="project__desc">
-                Магазин одежды с корзиной, оплатой и админ-панелью. Собрал витрину
-                на Next.js с SSR, настроил CI/CD и сократил время сборки до 40 секунд.
+                Взял на обслуживание 60 аппаратов ИВЛ в двух клиниках: регламентные
+                работы, замена расходных материалов, история по каждой единице.
+                Снизил внеплановые простои на 40%.
               </p>
-              <ul class="tags tags--sm"><li>Next.js</li><li>Stripe</li><li>PostgreSQL</li></ul>
-              <div class="project__links">
-                <a href="#" class="link-arrow">Демо <span aria-hidden="true">↗</span></a>
-                <a href="#" class="link-arrow">Код <span aria-hidden="true">↗</span></a>
-              </div>
+              <ul class="tags tags--sm"><li>ИВЛ</li><li>Регламент ТО</li><li>Учёт техники</li></ul>
             </div>
           </article>
 
           <article class="project reveal" style="--delay: 120ms">
-            <a class="project__media" href="#" aria-label="Открыть проект Focus Timer">
-              <img src="assets/img/project-3.svg" alt="Превью проекта Focus Timer" loading="lazy" />
+            <a class="project__media" href="#contact" aria-label="Обсудить входной контроль лабораторного оборудования">
+              <img src="assets/img/project-3.svg" alt="Схема лабораторного оборудования и поверки" loading="lazy" />
             </a>
             <div class="project__body">
-              <div class="project__meta"><span>2024</span> · <span>Pet-проект</span></div>
-              <h3 class="project__title">Focus Timer</h3>
+              <div class="project__meta"><span>2022</span> · <span>Метрология</span></div>
+              <h3 class="project__title">Лаборатория: входной контроль</h3>
               <p class="project__desc">
-                Минималистичный таймер по технике Помодоро с офлайн-режимом,
-                статистикой и синхронизацией между устройствами.
+                Проверил и ввёл в эксплуатацию 35 единиц лабораторного оборудования,
+                оформил паспорта и графики поверки, наладил учёт. Аккредитация
+                лаборатории прошла без замечаний по технической части.
               </p>
-              <ul class="tags tags--sm"><li>Vanilla JS</li><li>PWA</li><li>IndexedDB</li></ul>
-              <div class="project__links">
-                <a href="#" class="link-arrow">Демо <span aria-hidden="true">↗</span></a>
-                <a href="#" class="link-arrow">Код <span aria-hidden="true">↗</span></a>
-              </div>
+              <ul class="tags tags--sm"><li>Анализаторы</li><li>Поверка</li><li>Документация</li></ul>
             </div>
           </article>
         </div>
@@ -243,21 +255,21 @@
       <div class="container">
         <div class="contact reveal">
           <span class="section__kicker">04 — Контакты</span>
-          <h2 class="contact__title">Давайте сделаем что-то хорошее</h2>
+          <h2 class="contact__title">Обсудим обслуживание техники?</h2>
           <p class="contact__lead">
-            Открыт к фрилансу и полной занятости. Расскажите о задаче — отвечу в течение дня.
+            Рассматриваю предложения в клиниках и сервисных компаниях.
+            Расскажите, что за оборудование и что с ним происходит — отвечу в течение дня.
           </p>
 
           <div class="contact__actions">
-            <a class="btn btn--primary" href="mailto:hello@example.com">
+            <a class="btn btn--primary" href="mailto:pavel.novosadov@example.com">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-              hello@example.com
+              pavel.novosadov@example.com
             </a>
-            <button class="btn btn--ghost" id="copy-email" type="button" data-email="hello@example.com">Скопировать адрес</button>
+            <button class="btn btn--ghost" id="copy-email" type="button" data-email="pavel.novosadov@example.com">Скопировать адрес</button>
           </div>
 
           <ul class="socials">
-            <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
             <li><a href="https://t.me/" target="_blank" rel="noopener noreferrer">Telegram</a></li>
             <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
             <li><a href="#" target="_blank" rel="noopener noreferrer">Резюме (PDF)</a></li>
@@ -269,7 +281,7 @@
 
   <footer class="footer">
     <div class="container footer__inner">
-      <p>© <span id="year">2026</span> Александр Иванов. Сделано вручную, без конструкторов.</p>
+      <p>© <span id="year">2026</span> Павел Новосадов. Сделано вручную, без конструкторов.</p>
       <a href="#top">Наверх ↑</a>
     </div>
   </footer>

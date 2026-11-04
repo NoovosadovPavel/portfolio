@@ -1,42 +1,56 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Aurora Store — превью">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Аппарат искусственной вентиляции лёгких">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#1a1230"/>
+      <stop offset="0" stop-color="#0d1a20"/>
       <stop offset="1" stop-color="#0b0d16"/>
     </linearGradient>
-    <linearGradient id="card1" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#ff7a90" stop-opacity="0.85"/>
-      <stop offset="1" stop-color="#7c6cff" stop-opacity="0.85"/>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#43d9c4"/>
+      <stop offset="1" stop-color="#7c6cff"/>
     </linearGradient>
-    <linearGradient id="card2" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#43d9c4" stop-opacity="0.85"/>
-      <stop offset="1" stop-color="#7c6cff" stop-opacity="0.7"/>
+    <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#101a2c"/>
+      <stop offset="1" stop-color="#0a1120"/>
     </linearGradient>
   </defs>
   <rect width="800" height="500" fill="url(#bg)"/>
-  <rect x="40" y="34" width="720" height="52" rx="14" fill="#ffffff" opacity="0.05" stroke="#ffffff" stroke-opacity="0.07"/>
-  <circle cx="72" cy="60" r="10" fill="#ff7a90"/>
-  <rect x="94" y="53" width="80" height="12" rx="6" fill="#ffffff" opacity="0.18"/>
-  <rect x="520" y="50" width="60" height="18" rx="9" fill="#ffffff" opacity="0.1"/>
-  <rect x="594" y="50" width="60" height="18" rx="9" fill="#ffffff" opacity="0.1"/>
-  <rect x="668" y="50" width="64" height="18" rx="9" fill="#43d9c4" opacity="0.75"/>
 
-  <rect x="40" y="110" width="352" height="230" rx="18" fill="url(#card1)"/>
-  <rect x="64" y="286" width="150" height="14" rx="7" fill="#0a0b10" opacity="0.5"/>
-  <rect x="64" y="308" width="90" height="10" rx="5" fill="#0a0b10" opacity="0.3"/>
+  <!-- device body -->
+  <rect x="60" y="70" width="680" height="360" rx="26" fill="#151a2b" stroke="#ffffff" stroke-opacity="0.1" stroke-width="2"/>
+  <rect x="90" y="100" width="430" height="250" rx="16" fill="url(#screen)" stroke="#ffffff" stroke-opacity="0.08"/>
 
-  <rect x="408" y="110" width="352" height="230" rx="18" fill="url(#card2)"/>
-  <rect x="432" y="286" width="170" height="14" rx="7" fill="#0a0b10" opacity="0.5"/>
-  <rect x="432" y="308" width="100" height="10" rx="5" fill="#0a0b10" opacity="0.3"/>
+  <!-- waveform -->
+  <path d="M110 300 C 150 210, 180 210, 200 300 C 215 360, 235 360, 250 300 C 270 200, 310 200, 330 300 C 350 390, 380 390, 400 300 C 418 220, 450 220, 470 300 L 500 300"
+        fill="none" stroke="url(#wave)" stroke-width="4" stroke-linecap="round"/>
+  <line x1="110" y1="300" x2="500" y2="300" stroke="#ffffff" stroke-opacity="0.08" stroke-dasharray="4 6"/>
 
-  <g>
-    <rect x="40" y="364" width="172" height="104" rx="14" fill="#ffffff" opacity="0.05" stroke="#ffffff" stroke-opacity="0.07"/>
-    <rect x="228" y="364" width="172" height="104" rx="14" fill="#ffffff" opacity="0.05" stroke="#ffffff" stroke-opacity="0.07"/>
-    <rect x="416" y="364" width="172" height="104" rx="14" fill="#ffffff" opacity="0.05" stroke="#ffffff" stroke-opacity="0.07"/>
-    <rect x="588" y="364" width="172" height="104" rx="14" fill="#ffffff" opacity="0.05" stroke="#ffffff" stroke-opacity="0.07"/>
-    <rect x="60" y="428" width="70" height="12" rx="6" fill="#ffffff" opacity="0.16"/>
-    <rect x="248" y="428" width="70" height="12" rx="6" fill="#ffffff" opacity="0.16"/>
-    <rect x="436" y="428" width="70" height="12" rx="6" fill="#ffffff" opacity="0.16"/>
-    <rect x="608" y="428" width="70" height="12" rx="6" fill="#ffffff" opacity="0.16"/>
+  <!-- values -->
+  <g font-family="JetBrains Mono, monospace" fill="#eef0f6">
+    <text x="110" y="140" font-size="13" fill="#43d9c4" letter-spacing="2">PEAK</text>
+    <text x="110" y="178" font-size="34" font-weight="700">24</text>
+    <text x="168" y="178" font-size="14" fill="#9aa1b4">cmH₂O</text>
+
+    <text x="250" y="140" font-size="13" fill="#7c6cff" letter-spacing="2">VT</text>
+    <text x="250" y="178" font-size="34" font-weight="700">450</text>
+    <text x="316" y="178" font-size="14" fill="#9aa1b4">ml</text>
+
+    <text x="390" y="140" font-size="13" fill="#ffd66b" letter-spacing="2">RATE</text>
+    <text x="390" y="178" font-size="34" font-weight="700">14</text>
   </g>
+
+  <!-- controls -->
+  <g>
+    <circle cx="600" cy="160" r="42" fill="#1b2136" stroke="#43d9c4" stroke-opacity="0.6" stroke-width="3"/>
+    <circle cx="600" cy="160" r="14" fill="#43d9c4" opacity="0.85"/>
+    <rect x="548" y="226" width="104" height="10" rx="5" fill="#ffffff" opacity="0.14"/>
+    <rect x="548" y="250" width="72" height="10" rx="5" fill="#ffffff" opacity="0.1"/>
+    <rect x="548" y="286" width="46" height="18" rx="9" fill="#7c6cff" opacity="0.8"/>
+    <rect x="604" y="286" width="46" height="18" rx="9" fill="#ffffff" opacity="0.12"/>
+  </g>
+
+  <!-- bottom bar -->
+  <rect x="90" y="372" width="620" height="34" rx="17" fill="#ffffff" opacity="0.05"/>
+  <rect x="108" y="384" width="120" height="10" rx="5" fill="#43d9c4" opacity="0.5"/>
+  <rect x="244" y="384" width="80" height="10" rx="5" fill="#ffffff" opacity="0.14"/>
+  <rect x="340" y="384" width="96" height="10" rx="5" fill="#ffffff" opacity="0.1"/>
 </svg>

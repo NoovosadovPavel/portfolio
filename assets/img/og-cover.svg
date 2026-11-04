@@ -2,7 +2,7 @@
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0a0b10"/>
-      <stop offset="1" stop-color="#141830"/>
+      <stop offset="1" stop-color="#131a30"/>
     </linearGradient>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#7c6cff"/>
@@ -10,8 +10,8 @@
       <stop offset="1" stop-color="#ffd66b"/>
     </linearGradient>
     <radialGradient id="glow" cx="0.85" cy="0.1" r="0.7">
-      <stop offset="0" stop-color="#7c6cff" stop-opacity="0.5"/>
-      <stop offset="1" stop-color="#7c6cff" stop-opacity="0"/>
+      <stop offset="0" stop-color="#43d9c4" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#43d9c4" stop-opacity="0"/>
     </radialGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
@@ -21,8 +21,8 @@
     <path d="M120 0v630M240 0v630M360 0v630M480 0v630M600 0v630M720 0v630M840 0v630M960 0v630M1080 0v630"/>
   </g>
   <text x="80" y="200" font-family="Manrope, Segoe UI, sans-serif" font-size="26" font-weight="700" fill="#43d9c4" letter-spacing="4">ПОРТФОЛИО</text>
-  <text x="80" y="310" font-family="Manrope, Segoe UI, sans-serif" font-size="86" font-weight="800" fill="#eef0f6">Александр Иванов</text>
-  <text x="80" y="380" font-family="Manrope, Segoe UI, sans-serif" font-size="38" font-weight="600" fill="#9aa1b4">Frontend-разработчик</text>
-  <rect x="80" y="430" width="180" height="6" rx="3" fill="url(#g)"/>
-  <text x="80" y="510" font-family="JetBrains Mono, monospace" font-size="24" fill="#6b7288">TypeScript · React · Node.js</text>
+  <text x="80" y="312" font-family="Manrope, Segoe UI, sans-serif" font-size="80" font-weight="800" fill="#eef0f6">Павел Новосадов</text>
+  <text x="80" y="376" font-family="Manrope, Segoe UI, sans-serif" font-size="34" font-weight="600" fill="#9aa1b4">Инженер по медицинскому оборудованию</text>
+  <rect x="80" y="424" width="180" height="6" rx="3" fill="url(#g)"/>
+  <text x="80" y="506" font-family="JetBrains Mono, monospace" font-size="24" fill="#6b7288">Медтехника · Сервис · Метрология</text>
 </svg>
