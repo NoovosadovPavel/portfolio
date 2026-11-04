@@ -55,12 +55,11 @@ git push -u origin "$BRANCH"
 
 # --- GitHub Pages ----------------------------------------------------------
 echo "→ Включаю GitHub Pages (ветка $BRANCH, корень)"
-if ! gh api "repos/$OWNER/$REPO_NAME/pages" >/dev/null 2>&1; then
-  gh api --method POST "repos/$OWNER/$REPO_NAME/pages" \
-    -f "source[branch]=$BRANCH" -f "source[path]=/" >/dev/null
+PAYLOAD="{\"source\":{\"branch\":\"$BRANCH\",\"path\":\"/\"}}"
+if gh api "repos/$OWNER/$REPO_NAME/pages" >/dev/null 2>&1; then
+  echo "$PAYLOAD" | gh api --method PUT "repos/$OWNER/$REPO_NAME/pages" --input - >/dev/null
 else
-  gh api --method PUT "repos/$OWNER/$REPO_NAME/pages" \
-    -f "source[branch]=$BRANCH" -f "source[path]=/" >/dev/null
+  echo "$PAYLOAD" | gh api --method POST "repos/$OWNER/$REPO_NAME/pages" --input - >/dev/null
 fi
 
 # --- итог ------------------------------------------------------------------
