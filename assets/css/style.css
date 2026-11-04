@@ -531,7 +531,7 @@ ul { list-style: none; padding: 0; }
 /* ---------- Skills ---------- */
 .skills {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 18px;
 }
 .skill-card {
@@ -551,6 +551,12 @@ ul { list-style: none; padding: 0; }
   font-weight: 700;
   margin-bottom: 18px;
   letter-spacing: -0.01em;
+}
+
+.skill-card__text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-muted);
 }
 
 .tags { display: flex; flex-wrap: wrap; gap: 8px; }
