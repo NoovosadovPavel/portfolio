@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — Страница не найдена</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <style>
+    :root {
+      --bg: #0a0b10; --text: #eef0f6; --muted: #9aa1b4;
+      --gradient: linear-gradient(120deg, #7c6cff, #43d9c4, #ffd66b);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100svh; display: grid; place-items: center;
+      background: var(--bg); color: var(--text); text-align: center; padding: 24px;
+      font-family: "Manrope", ui-sans-serif, system-ui, -apple-system, sans-serif;
+    }
+    .code {
+      font-size: clamp(6rem, 22vw, 13rem); font-weight: 800; line-height: 1;
+      letter-spacing: -0.06em; background: var(--gradient);
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    p { color: var(--muted); margin: 8px 0 32px; font-size: 1.05rem; }
+    a {
+      display: inline-block; padding: 13px 28px; border-radius: 999px;
+      background: var(--text); color: var(--bg); font-weight: 700;
+      text-decoration: none; transition: transform .2s, background .2s, color .2s;
+    }
+    a:hover { transform: translateY(-2px); background: #7c6cff; color: #fff; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="code">404</div>
+    <p>Такой страницы здесь нет. Возможно, она переехала.</p>
+    <a href="/">Вернуться на главную</a>
+  </main>
+</body>
+</html>
