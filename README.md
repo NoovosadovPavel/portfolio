@@ -38,7 +38,7 @@ portfolio/
 ├── 404.html                # страница ошибки
 ├── robots.txt
 ├── sitemap.xml
-├── certificates/           # сюда складываются сканы сертификатов
+├── certificates/           # сканы сертификатов и папка previews/
 ├── .nojekyll               # отключает обработку Jekyll на GitHub Pages
 ├── assets/
 │   ├── css/style.css       # стили и дизайн-токены
@@ -73,20 +73,21 @@ python3 -m http.server 8000
 
 ### Как добавить сертификат
 
-1. Положите скан в `certificates/` (например, `2026-elektromehanik-medoborudovanie.jpg`).
+1. Положите оригинал в `certificates/`, а превью 800×600 — в `certificates/previews/`.
 2. В секции `#certificates` добавьте карточку:
 
 ```html
 <article class="cert reveal">
   <div class="cert__top">
-    <span class="cert__kind">Удостоверение</span>
+    <span class="cert__kind">Сертификат</span>
     <span class="cert__year">2026</span>
   </div>
   <a class="cert__scan" href="certificates/2026-elektromehanik-medoborudovanie.jpg" target="_blank" rel="noopener">
-    <img src="certificates/2026-elektromehanik-medoborudovanie.jpg" alt="Удостоверение электромеханика, 2026" loading="lazy" />
+    <img src="certificates/previews/2026-elektromehanik-medoborudovanie.jpg" alt="Удостоверение электромеханика, 2026" width="800" height="600" loading="lazy" />
   </a>
   <h3 class="cert__title">Название документа</h3>
   <p class="cert__org">Кто выдал</p>
+  <p class="cert__meta">Дата · номер</p>
 </article>
 ```
 
@@ -104,7 +105,8 @@ python3 -m http.server 8000
 - [ ] Цифры в кейсах: **60 аппаратов ИВЛ**, **35 единиц**, **снижение простоев на 40%**
 - [ ] Годы и организации в кейсах (2023, 2022)
 - [ ] Список прошлых мест работы (пользователь пришлёт отдельно)
-- [ ] Сканы, номера и сроки действия сертификатов
+- [x] Сертификаты: 12 сканов добавлены в `certificates/` и размечены в `#certificates`
+- [ ] Проверить, все ли номера и данные на сканах можно публиковать
 - [ ] Ссылки на Telegram / LinkedIn, если нужны
 - [ ] PDF-резюме, если нужна кнопка «Скачать резюме»
 
