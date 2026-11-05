@@ -38,6 +38,7 @@ portfolio/
 ├── 404.html                # страница ошибки
 ├── robots.txt
 ├── sitemap.xml
+├── certificates/           # сюда складываются сканы сертификатов
 ├── .nojekyll               # отключает обработку Jekyll на GitHub Pages
 ├── assets/
 │   ├── css/style.css       # стили и дизайн-токены
@@ -64,6 +65,7 @@ python3 -m http.server 8000
 | Навыки и фильтры | `index.html`, секция `#skills`; кнопки `.filter`, карточки `.skill-card` с `data-track` |
 | Кейсы | `index.html`, секция `#experience` |
 | Сертификаты | `index.html`, секция `#certificates` |
+| Сканы сертификатов | `certificates/` |
 | Курсы | `index.html`, секция `#education` |
 | Контакты | `index.html`, секция `#contact` |
 | Цвета и шрифты | `assets/css/style.css`, блок `:root` и `[data-theme="light"]` |
@@ -71,7 +73,7 @@ python3 -m http.server 8000
 
 ### Как добавить сертификат
 
-1. Положите скан в `assets/img/certs/` (например, `electromechanic-2026.jpg`).
+1. Положите скан в `certificates/` (например, `2026-elektromehanik-medoborudovanie.jpg`).
 2. В секции `#certificates` добавьте карточку:
 
 ```html
@@ -80,8 +82,8 @@ python3 -m http.server 8000
     <span class="cert__kind">Удостоверение</span>
     <span class="cert__year">2026</span>
   </div>
-  <a class="cert__scan" href="assets/img/certs/electromechanic-2026.jpg" target="_blank" rel="noopener">
-    <img src="assets/img/certs/electromechanic-2026.jpg" alt="Удостоверение электромеханика, 2026" loading="lazy" />
+  <a class="cert__scan" href="certificates/2026-elektromehanik-medoborudovanie.jpg" target="_blank" rel="noopener">
+    <img src="certificates/2026-elektromehanik-medoborudovanie.jpg" alt="Удостоверение электромеханика, 2026" loading="lazy" />
   </a>
   <h3 class="cert__title">Название документа</h3>
   <p class="cert__org">Кто выдал</p>
