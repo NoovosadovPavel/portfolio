@@ -107,32 +107,6 @@
     reveals.forEach((el) => el.classList.add("is-visible"));
   }
 
-  /* ---------- Skills filter ---------- */
-  const filterButtons = $$("[data-skill-filter]");
-  const skillCards = $$(".skill-card");
-
-  const applyFilter = (track) => {
-    filterButtons.forEach((btn) => {
-      const active = btn.dataset.skillFilter === track;
-      btn.classList.toggle("is-active", active);
-      btn.setAttribute("aria-pressed", String(active));
-    });
-
-    skillCards.forEach((card) => {
-      const show = track === "all" || card.dataset.track === track;
-      card.hidden = !show;
-      if (show) card.classList.add("is-visible");
-    });
-  };
-
-  filterButtons.forEach((btn) => {
-    btn.addEventListener("click", () => applyFilter(btn.dataset.skillFilter || "all"));
-  });
-
-  $$("[data-filter]").forEach((link) => {
-    link.addEventListener("click", () => applyFilter(link.dataset.filter || "all"));
-  });
-
   /* ---------- Cursor glow (pointer devices only) ---------- */
   const glow = $(".cursor-glow");
   if (glow && window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
