@@ -1,6 +1,6 @@
 /* ==========================================================================
    Portfolio — main.js
-   Vanilla JS: theme, mobile nav, scroll spy, reveal, copy email, cursor glow
+   Тема, мобильное меню, scroll-spy, фильтр навыков, анимации, копирование e-mail
    ========================================================================== */
 (() => {
   "use strict";
@@ -72,8 +72,13 @@
       (entries) => {
         entries.forEach((entry) => {
           if (!entry.isIntersecting) return;
-          navLinks.forEach((l) => l.classList.remove("is-active"));
-          linkFor.get(entry.target.id)?.classList.add("is-active");
+          navLinks.forEach((l) => {
+            l.classList.remove("is-active");
+            l.removeAttribute("aria-current");
+          });
+          const link = linkFor.get(entry.target.id);
+          link?.classList.add("is-active");
+          link?.setAttribute("aria-current", "true");
         });
       },
       { rootMargin: "-45% 0px -50% 0px", threshold: 0 }
@@ -83,8 +88,10 @@
 
   /* ---------- Reveal on scroll ---------- */
   const reveals = $$(".reveal");
+  let io = null;
+
   if ("IntersectionObserver" in window && reveals.length) {
-    const io = new IntersectionObserver(
+    io = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
@@ -99,6 +106,32 @@
   } else {
     reveals.forEach((el) => el.classList.add("is-visible"));
   }
+
+  /* ---------- Skills filter ---------- */
+  const filterButtons = $$("[data-skill-filter]");
+  const skillCards = $$(".skill-card");
+
+  const applyFilter = (track) => {
+    filterButtons.forEach((btn) => {
+      const active = btn.dataset.skillFilter === track;
+      btn.classList.toggle("is-active", active);
+      btn.setAttribute("aria-pressed", String(active));
+    });
+
+    skillCards.forEach((card) => {
+      const show = track === "all" || card.dataset.track === track;
+      card.hidden = !show;
+      if (show) card.classList.add("is-visible");
+    });
+  };
+
+  filterButtons.forEach((btn) => {
+    btn.addEventListener("click", () => applyFilter(btn.dataset.skillFilter || "all"));
+  });
+
+  $$("[data-filter]").forEach((link) => {
+    link.addEventListener("click", () => applyFilter(link.dataset.filter || "all"));
+  });
 
   /* ---------- Cursor glow (pointer devices only) ---------- */
   const glow = $(".cursor-glow");
@@ -130,6 +163,7 @@
   const copyBtn = $("#copy-email");
   if (copyBtn) {
     const initial = copyBtn.textContent;
+    let timer = null;
     copyBtn.addEventListener("click", async () => {
       const email = copyBtn.dataset.email || "";
       try {
@@ -145,7 +179,8 @@
         ta.remove();
       }
       copyBtn.textContent = "Скопировано ✓";
-      setTimeout(() => (copyBtn.textContent = initial), 1800);
+      clearTimeout(timer);
+      timer = setTimeout(() => (copyBtn.textContent = initial), 1800);
     });
   }
 

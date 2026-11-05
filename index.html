@@ -3,35 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Павел Новосадов — инженер по медицинскому оборудованию</title>
-  <meta name="description" content="Портфолио инженера по медицинскому оборудованию: обслуживание и ремонт диагностической и лечебной техники, ввод в эксплуатацию, метрологический контроль." />
+  <title>Павел Новосадов — инженер, техник, видеомонтажёр</title>
+  <meta name="description" content="Портфолио Павла Новосадова: инженерный сервис и медицинская техника, производство и ЧПУ, видеомонтаж, склад и учёт. Навыки, опыт, сертификаты и курсы." />
   <meta name="author" content="Павел Новосадов" />
+  <meta name="theme-color" content="#0a0b10" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Павел Новосадов — инженер по медицинскому оборудованию" />
-  <meta property="og:description" content="Обслуживание и ремонт медицинской техники, ввод в эксплуатацию, метрологический контроль." />
-  <meta property="og:image" content="assets/img/og-cover.png" />
+  <meta property="og:title" content="Павел Новосадов — инженер, техник, видеомонтажёр" />
+  <meta property="og:description" content="Инженерный сервис, производство, видеомонтаж и складской учёт. Опыт, навыки, сертификаты и курсы." />
+  <meta property="og:image" content="https://noovosadovpavel.github.io/portfolio/assets/img/og-cover.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Павел Новосадов — инженер, техник, видеомонтажёр" />
   <meta property="og:url" content="https://noovosadovpavel.github.io/portfolio/" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:site_name" content="Павел Новосадов" />
   <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://noovosadovpavel.github.io/portfolio/" />
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
+
+  <script>
+    (() => {
+      try {
+        const saved = localStorage.getItem("portfolio-theme");
+        const theme = saved === "light" || saved === "dark"
+          ? saved
+          : (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (_) {}
+    })();
+  </script>
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Павел Новосадов",
-    "jobTitle": "Инженер по медицинскому оборудованию",
+    "jobTitle": "Инженер, техник, видеомонтажёр",
+    "email": "mailto:novosadovpavel80@gmail.com",
     "url": "https://noovosadovpavel.github.io/portfolio/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Минск",
+      "addressCountry": "BY"
+    },
     "knowsAbout": [
       "Медицинское оборудование",
       "Метрология",
       "Техническое обслуживание",
-      "Электробезопасность"
+      "Электробезопасность",
+      "Наладка станков с ЧПУ",
+      "Видеомонтаж",
+      "Складской учёт и 1С"
     ]
   }
   </script>
@@ -43,23 +71,25 @@
 
   <header class="header" id="header">
     <div class="container header__inner">
-      <a class="logo" href="#top" aria-label="На главную">
-        <span class="logo__mark">ПН</span>
-        <span class="logo__text">novosadov<span class="logo__dot">.</span>med</span>
+      <a class="logo" href="#top" aria-label="Павел Новосадов — на главную">
+        <span class="logo__mark" aria-hidden="true">ПН</span>
+        <span class="logo__text">novosadov<span class="logo__dot">.</span></span>
       </a>
 
       <nav class="nav" id="nav" aria-label="Основная навигация">
         <a href="#about" class="nav__link">О себе</a>
+        <a href="#directions" class="nav__link">Направления</a>
         <a href="#skills" class="nav__link">Навыки</a>
+        <a href="#experience" class="nav__link">Опыт</a>
+        <a href="#certificates" class="nav__link">Сертификаты</a>
         <a href="#education" class="nav__link">Курсы</a>
-        <a href="#projects" class="nav__link">Опыт</a>
         <a href="#contact" class="nav__link">Контакты</a>
       </nav>
 
       <div class="header__actions">
         <button class="icon-btn" id="theme-toggle" type="button" aria-label="Переключить тему" aria-pressed="false">
-          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
         </button>
         <button class="burger" id="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="nav">
           <span></span><span></span>
@@ -80,30 +110,30 @@
       <div class="container hero__inner">
         <p class="hero__badge reveal">
           <span class="status-dot" aria-hidden="true"></span>
-          Рассматриваю предложения
+          Открыт к предложениям · Минск
         </p>
 
         <h1 class="hero__title reveal" style="--delay: 60ms">
-          Привет, я <span class="gradient-text">Павел</span><br />
-          держу медицинскую технику
-          в&nbsp;рабочем строю
+          <span class="hero__name">Павел <span class="gradient-text">Новосадов</span></span>
+          <span class="hero__roles">Инженер <span aria-hidden="true">·</span> Техник <span aria-hidden="true">·</span> Видеомонтажёр</span>
         </h1>
 
         <p class="hero__lead reveal" style="--delay: 120ms">
-          Инженер по медицинскому оборудованию с 7&#8209;летним опытом. Обслуживаю
-          и ремонтирую диагностическую и лечебную технику, провожу
-          приёмо&#8209;сдаточные испытания и метрологический контроль.
+          Семь лет работаю с медицинской и лабораторной техникой: обслуживание,
+          ремонт, метрология, документы. Есть подготовка по наладке станков с ЧПУ,
+          складскому учёту и видеомонтажу. Берусь за задачи, где нужно разобраться
+          в устройстве и навести порядок.
         </p>
 
         <div class="hero__cta reveal" style="--delay: 180ms">
-          <a class="btn btn--primary" href="#projects">Смотреть опыт</a>
+          <a class="btn btn--primary" href="#directions">Смотреть направления</a>
           <a class="btn btn--ghost" href="#contact">Связаться</a>
         </div>
 
         <ul class="hero__stats reveal" style="--delay: 240ms">
           <li><strong>7+</strong><span>лет опыта</span></li>
           <li><strong>400+</strong><span>единиц техники</span></li>
-          <li><strong>25</strong><span>медучреждений</span></li>
+          <li><strong>25</strong><span>организаций</span></li>
         </ul>
       </div>
 
@@ -121,32 +151,36 @@
         <div class="about">
           <div class="about__text reveal">
             <p>
-              Меня зовут Павел Новосадов, я инженер по медицинскому оборудованию.
-              Работаю с парком диагностической и лечебной техники в клиниках
-              и лабораториях: от ввода в эксплуатацию до планового обслуживания
-              и ремонта.
+              Меня зовут Павел Новосадов. Основной профиль — инженерный сервис:
+              медицинская, лабораторная и холодильная техника, плановое обслуживание,
+              ремонт, ввод в эксплуатацию и метрологический контроль.
             </p>
             <p>
-              Разбираюсь в схемотехнике, пневматике и гидравлике медицинских систем,
-              работаю с сервисной документацией производителей. Провожу измерения
-              электрической безопасности и контролирую соответствие оборудования
-              требованиям ТР ЕАЭС 040/2016 и ГОСТ ISO 13485.
+              Кроме этого, прошёл подготовку по наладке станков с ЧПУ, складскому
+              учёту в 1С и видеомонтажу — и готов применять эти навыки в работе,
+              а не держать их «для галочки» в резюме.
             </p>
             <p>
               В работе ценю предсказуемость: диагностика по фактам, понятные отчёты,
-              честные сроки. Чем меньше техника простаивает — тем лучше для пациентов.
+              честные сроки. Если берусь — довожу до результата и оставляю после
+              себя порядок в документах.
+            </p>
+            <p class="about__note">
+              Открыт к постоянной работе и проектам: инженер, техник, мастер,
+              видеомонтажёр, склад и учёт.
             </p>
             <a class="link-arrow" href="#contact">Обсудить сотрудничество <span aria-hidden="true">→</span></a>
           </div>
 
           <div class="about__card reveal" style="--delay: 80ms">
             <div class="about__avatar">
-              <img src="assets/img/avatar.svg" alt="Портрет Павла Новосадова" width="120" height="120" loading="lazy" />
+              <img src="assets/img/avatar.svg" alt="Монограмма Павла Новосадова" width="120" height="120" loading="lazy" />
             </div>
             <dl class="facts">
               <div><dt>Локация</dt><dd>Минск · выезды по Беларуси</dd></div>
-              <div><dt>Опыт</dt><dd>7 лет в сервисе медтехники</dd></div>
-              <div><dt>Специализация</dt><dd>Диагностическое и лечебное оборудование</dd></div>
+              <div><dt>Опыт</dt><dd>7 лет в технике и сервисе</dd></div>
+              <div><dt>Направления</dt><dd>Сервис · производство · видео</dd></div>
+              <div><dt>Формат</dt><dd>Постоянная работа · проекты</dd></div>
               <div><dt>Языки</dt><dd>Русский · English (A1)</dd></div>
             </dl>
           </div>
@@ -154,23 +188,104 @@
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section class="section section--alt" id="skills">
+    <!-- DIRECTIONS -->
+    <section class="section section--alt" id="directions">
       <div class="container">
         <div class="section__head reveal">
-          <span class="section__kicker">02 — Навыки</span>
+          <span class="section__kicker">02 — Направления</span>
+          <h2 class="section__title">Где я могу быть полезен</h2>
+        </div>
+
+        <div class="directions">
+          <article class="direction reveal" data-track="service">
+            <span class="direction__num" aria-hidden="true">01</span>
+            <span class="direction__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0 5 5l-9.4 9.4a2.1 2.1 0 0 1-3-3z"/><path d="M14.7 6.3 18 3l3 3-3.3 3.3"/></svg>
+            </span>
+            <h3>Инженерный сервис</h3>
+            <p>
+              Медицинская, лабораторная и холодильная техника: плановое ТО,
+              ремонт, ввод в эксплуатацию, поверка и документы.
+            </p>
+            <a class="direction__link" href="#skills" data-filter="service">Смотреть навыки <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="direction reveal" data-track="production" style="--delay: 60ms">
+            <span class="direction__num" aria-hidden="true">02</span>
+            <span class="direction__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9 7 7M17 17l2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1"/></svg>
+            </span>
+            <h3>Производство и ЧПУ</h3>
+            <p>
+              Наладка станков и манипуляторов с программным управлением, механика,
+              работа по регламентам и технической документации.
+            </p>
+            <a class="direction__link" href="#skills" data-filter="production">Смотреть навыки <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="direction reveal" data-track="video" style="--delay: 120ms">
+            <span class="direction__num" aria-hidden="true">03</span>
+            <span class="direction__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10 9 5 3-5 3z"/></svg>
+            </span>
+            <h3>Видеомонтаж</h3>
+            <p>
+              Сборка роликов, нарезка, титры, звук и подготовка файлов
+              к публикации. Профильный курс по видеомонтажу; готов
+              выполнить тестовое задание.
+            </p>
+            <a class="direction__link" href="#skills" data-filter="video">Смотреть навыки <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="direction reveal" data-track="warehouse" style="--delay: 180ms">
+            <span class="direction__num" aria-hidden="true">04</span>
+            <span class="direction__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18v13H3z"/><path d="M3 7l3-4h12l3 4M9 12h6"/></svg>
+            </span>
+            <h3>Склад и учёт</h3>
+            <p>
+              Приёмка и отпуск, инвентаризация, номенклатура и порядок
+              в документах. Уверенный пользователь 1С.
+            </p>
+            <a class="direction__link" href="#skills" data-filter="warehouse">Смотреть навыки <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__kicker">03 — Навыки</span>
           <h2 class="section__title">Чем я работаю</h2>
         </div>
 
-        <div class="skills">
-          <article class="skill-card reveal">
+        <div class="filters reveal" role="group" aria-label="Фильтр навыков по направлению">
+          <button class="filter is-active" type="button" data-skill-filter="all" aria-pressed="true">Все</button>
+          <button class="filter" type="button" data-skill-filter="service" aria-pressed="false">Сервис и техника</button>
+          <button class="filter" type="button" data-skill-filter="production" aria-pressed="false">Производство</button>
+          <button class="filter" type="button" data-skill-filter="video" aria-pressed="false">Видео</button>
+          <button class="filter" type="button" data-skill-filter="warehouse" aria-pressed="false">Склад и учёт</button>
+          <button class="filter" type="button" data-skill-filter="it" aria-pressed="false">IT</button>
+        </div>
+
+        <div class="skills" id="skills-grid">
+          <article class="skill-card reveal" data-track="service">
+            <h3>Медицинское оборудование</h3>
+            <ul class="tags">
+              <li>ТО</li><li>Ремонт</li><li>ПНР</li><li>Входной контроль</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal" data-track="service" style="--delay: 40ms">
             <h3>Лабораторное оборудование</h3>
             <ul class="tags">
               <li>Центрифуги</li>
             </ul>
           </article>
 
-          <article class="skill-card reveal" style="--delay: 60ms">
+          <article class="skill-card reveal" data-track="service" style="--delay: 80ms">
             <h3>Оборудование для производства лекарственных препаратов</h3>
             <ul class="tags">
               <li>Холодильное оборудование</li>
@@ -178,31 +293,197 @@
             </ul>
           </article>
 
-          <article class="skill-card reveal" style="--delay: 120ms">
+          <article class="skill-card reveal" data-track="service" style="--delay: 120ms">
             <h3>Метрология и безопасность</h3>
             <ul class="tags">
               <li>Поверка</li><li>Калибровка</li><li>Электробезопасность</li>
-              <li>Дозиметрия</li><li>Входной контроль</li><li>ПНР</li>
+              <li>Дозиметрия</li><li>ПНР</li>
             </ul>
           </article>
 
-          <article class="skill-card reveal" style="--delay: 180ms">
+          <article class="skill-card reveal" data-track="service" style="--delay: 160ms">
             <h3>Нормы и документация</h3>
             <ul class="tags">
               <li>ТР ЕАЭС 040/2016</li><li>ГОСТ ISO 13485</li><li>ГОСТ ISO 9001</li>
               <li>Сервисные акты</li><li>Графики ТО</li><li>Формуляры</li>
             </ul>
           </article>
+
+          <article class="skill-card reveal" data-track="production" style="--delay: 200ms">
+            <h3>Производство и ЧПУ</h3>
+            <ul class="tags">
+              <li>Наладка станков</li><li>Программное управление</li>
+              <li>Механика</li><li>Техническая документация</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal" data-track="video" style="--delay: 240ms">
+            <h3>Видеомонтаж</h3>
+            <ul class="tags">
+              <li>Монтаж</li><li>Нарезка</li><li>Титры</li><li>Звук</li><li>Экспорт</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal" data-track="warehouse" style="--delay: 280ms">
+            <h3>Склад и учёт</h3>
+            <ul class="tags">
+              <li>1С</li><li>Приёмка и отпуск</li><li>Инвентаризация</li>
+              <li>Номенклатура</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal" data-track="it" style="--delay: 320ms">
+            <h3>Программирование</h3>
+            <ul class="tags">
+              <li>C</li><li>C++</li><li>Java</li><li>Python</li><li>Android</li>
+            </ul>
+            <p class="skill-card__note">Учебные проекты, база из курсов 2017 года.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section section--alt" id="experience">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__kicker">04 — Опыт</span>
+          <h2 class="section__title">Из практики</h2>
+        </div>
+
+        <div class="projects">
+          <article class="project reveal">
+            <a class="project__media" href="#contact" aria-label="Обсудить обслуживание парка ИВЛ">
+              <img src="assets/img/project-ventilator.svg" alt="Схема обслуживания парка аппаратов искусственной вентиляции лёгких" loading="lazy" />
+            </a>
+            <div class="project__body">
+              <div class="project__meta"><span>2023</span> · <span>Сервисное обслуживание</span></div>
+              <h3 class="project__title">Парк ИВЛ: плановое ТО</h3>
+              <p class="project__desc">
+                Взял на обслуживание 60 аппаратов ИВЛ в двух клиниках: регламентные
+                работы, замена расходных материалов, история по каждой единице.
+                Снизил внеплановые простои на 40%.
+              </p>
+              <ul class="tags tags--sm"><li>Медтехника</li><li>Регламент ТО</li><li>Учёт техники</li></ul>
+            </div>
+          </article>
+
+          <article class="project project--reverse reveal" style="--delay: 60ms">
+            <a class="project__media" href="#contact" aria-label="Обсудить входной контроль лабораторного оборудования">
+              <img src="assets/img/project-lab.svg" alt="Схема лабораторного оборудования и поверки" loading="lazy" />
+            </a>
+            <div class="project__body">
+              <div class="project__meta"><span>2022</span> · <span>Метрология</span></div>
+              <h3 class="project__title">Лаборатория: входной контроль</h3>
+              <p class="project__desc">
+                Проверил и ввёл в эксплуатацию 35 единиц лабораторного оборудования,
+                оформил паспорта и графики поверки, наладил учёт. Аккредитация
+                лаборатории прошла без замечаний по технической части.
+              </p>
+              <ul class="tags tags--sm"><li>Лабораторное оборудование</li><li>Поверка</li><li>Документация</li></ul>
+            </div>
+          </article>
+        </div>
+
+        <!-- WORK_HISTORY: сюда добавим хронологию мест работы, когда будут данные -->
+        <div class="experience__note reveal">
+          <div>
+            <h3>Полная хронология мест работы</h3>
+            <p>В резюме: все должности, периоды и задачи. Пришлю по запросу.</p>
+          </div>
+          <a class="btn btn--ghost" href="mailto:novosadovpavel80@gmail.com?subject=%D0%97%D0%B0%D0%BF%D1%80%D0%BE%D1%81%20%D1%80%D0%B5%D0%B7%D1%8E%D0%BC%D0%B5">Запросить резюме</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section class="section" id="certificates">
+      <div class="container">
+        <div class="section__head section__head--row reveal">
+          <div>
+            <span class="section__kicker">05 — Сертификаты</span>
+            <h2 class="section__title">Документы об обучении</h2>
+          </div>
+          <p class="section__note">Сканы, номера и сроки действия — по запросу.</p>
+        </div>
+
+        <div class="certs">
+          <article class="cert reveal">
+            <div class="cert__top">
+              <span class="cert__kind">Удостоверение</span>
+              <span class="cert__year">2026</span>
+            </div>
+            <h3 class="cert__title">Электромеханик по ремонту и обслуживанию медицинского оборудования</h3>
+            <p class="cert__org">Центр подготовки, повышения квалификации и переподготовки кадров</p>
+          </article>
+
+          <article class="cert reveal" style="--delay: 40ms">
+            <div class="cert__top">
+              <span class="cert__kind">Удостоверение</span>
+              <span class="cert__year">2026</span>
+            </div>
+            <h3 class="cert__title">Электромеханик по ремонту и обслуживанию медицинских оптических приборов</h3>
+            <p class="cert__org">Центр подготовки, повышения квалификации и переподготовки кадров</p>
+          </article>
+
+          <article class="cert reveal" style="--delay: 80ms">
+            <div class="cert__top">
+              <span class="cert__kind">Удостоверение</span>
+              <span class="cert__year">2025</span>
+            </div>
+            <h3 class="cert__title">Ответственный за техническое состояние медицинских стерилизаторов</h3>
+            <p class="cert__org">РИВШ</p>
+          </article>
+
+          <article class="cert reveal" style="--delay: 120ms">
+            <div class="cert__top">
+              <span class="cert__kind">Удостоверение</span>
+              <span class="cert__year">2024</span>
+            </div>
+            <h3 class="cert__title">Сосуды, работающие под избыточным давлением</h3>
+            <p class="cert__org">РИВШ</p>
+          </article>
+
+          <article class="cert reveal" style="--delay: 160ms">
+            <div class="cert__top">
+              <span class="cert__kind">Сертификат</span>
+              <span class="cert__year">2023</span>
+            </div>
+            <h3 class="cert__title">Основы видеомонтажа</h3>
+            <p class="cert__org">Professional school</p>
+          </article>
+
+          <article class="cert reveal" style="--delay: 200ms">
+            <div class="cert__top">
+              <span class="cert__kind">Удостоверение</span>
+              <span class="cert__year">2021</span>
+            </div>
+            <h3 class="cert__title">Наладчик станков и манипуляторов с программным управлением</h3>
+            <p class="cert__org">Промтехобразование</p>
+          </article>
+
+          <article class="cert reveal" style="--delay: 240ms">
+            <div class="cert__top">
+              <span class="cert__kind">Сертификат</span>
+              <span class="cert__year">2013</span>
+            </div>
+            <h3 class="cert__title">Кладовщик со знанием 1С</h3>
+            <p class="cert__org">РИПК</p>
+          </article>
+        </div>
+
+        <div class="section__cta reveal">
+          <a class="btn btn--ghost" href="mailto:novosadovpavel80@gmail.com?subject=%D0%97%D0%B0%D0%BF%D1%80%D0%BE%D1%81%20%D1%81%D0%BA%D0%B0%D0%BD%D0%BE%D0%B2%20%D1%81%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D0%B2">Запросить сканы</a>
         </div>
       </div>
     </section>
 
     <!-- EDUCATION -->
-    <section class="section" id="education">
+    <section class="section section--alt" id="education">
       <div class="container">
         <div class="section__head reveal">
-          <span class="section__kicker">03 — Обучение</span>
-          <h2 class="section__title">Повышение квалификации и курсы</h2>
+          <span class="section__kicker">06 — Курсы</span>
+          <h2 class="section__title">Повышение квалификации</h2>
         </div>
 
         <div class="edu">
@@ -244,16 +525,8 @@
           </div>
 
           <div class="edu__group reveal" style="--delay: 80ms">
-            <h3 class="edu__title">Инженерные и цифровые навыки</h3>
+            <h3 class="edu__title">Производство и IT</h3>
             <ul class="timeline">
-              <li class="tl-item">
-                <div class="tl-item__head">
-                  <h4 class="tl-item__name">Основы видеомонтажа</h4>
-                  <span class="tl-item__year">2023</span>
-                </div>
-                <p class="tl-item__org">Professional school</p>
-              </li>
-
               <li class="tl-item">
                 <div class="tl-item__head">
                   <h4 class="tl-item__name">Наладчик станков и манипуляторов с программным управлением</h4>
@@ -278,6 +551,19 @@
                 </div>
                 <p class="tl-item__org">Образовательный центр ПВТ</p>
               </li>
+            </ul>
+          </div>
+
+          <div class="edu__group reveal" style="--delay: 160ms">
+            <h3 class="edu__title">Видео, язык и учёт</h3>
+            <ul class="timeline">
+              <li class="tl-item">
+                <div class="tl-item__head">
+                  <h4 class="tl-item__name">Основы видеомонтажа</h4>
+                  <span class="tl-item__year">2023</span>
+                </div>
+                <p class="tl-item__org">Professional school</p>
+              </li>
 
               <li class="tl-item">
                 <div class="tl-item__head">
@@ -301,73 +587,29 @@
       </div>
     </section>
 
-    <!-- EXPERIENCE -->
-    <section class="section section--alt" id="projects">
-      <div class="container">
-        <div class="section__head reveal">
-          <span class="section__kicker">04 — Опыт</span>
-          <h2 class="section__title">Из практики</h2>
-        </div>
-
-        <div class="projects">
-          <article class="project reveal">
-            <a class="project__media" href="#contact" aria-label="Обсудить обслуживание парка ИВЛ">
-              <img src="assets/img/project-ventilator.svg" alt="Панель аппарата искусственной вентиляции лёгких" loading="lazy" />
-            </a>
-            <div class="project__body">
-              <div class="project__meta"><span>2023</span> · <span>Сервисное обслуживание</span></div>
-              <h3 class="project__title">Парк ИВЛ: плановое ТО</h3>
-              <p class="project__desc">
-                Взял на обслуживание 60 аппаратов ИВЛ в двух клиниках: регламентные
-                работы, замена расходных материалов, история по каждой единице.
-                Снизил внеплановые простои на 40%.
-              </p>
-              <ul class="tags tags--sm"><li>ИВЛ</li><li>Регламент ТО</li><li>Учёт техники</li></ul>
-            </div>
-          </article>
-
-          <article class="project project--reverse reveal" style="--delay: 60ms">
-            <a class="project__media" href="#contact" aria-label="Обсудить входной контроль лабораторного оборудования">
-              <img src="assets/img/project-lab.svg" alt="Схема лабораторного оборудования и поверки" loading="lazy" />
-            </a>
-            <div class="project__body">
-              <div class="project__meta"><span>2022</span> · <span>Метрология</span></div>
-              <h3 class="project__title">Лаборатория: входной контроль</h3>
-              <p class="project__desc">
-                Проверил и ввёл в эксплуатацию 35 единиц лабораторного оборудования,
-                оформил паспорта и графики поверки, наладил учёт. Аккредитация
-                лаборатории прошла без замечаний по технической части.
-              </p>
-              <ul class="tags tags--sm"><li>Анализаторы</li><li>Поверка</li><li>Документация</li></ul>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <!-- CONTACT -->
     <section class="section section--contact" id="contact">
       <div class="container">
         <div class="contact reveal">
-          <span class="section__kicker">05 — Контакты</span>
-          <h2 class="contact__title">Обсудим обслуживание техники?</h2>
+          <span class="section__kicker">07 — Контакты</span>
+          <h2 class="contact__title">Открыт к предложениям</h2>
           <p class="contact__lead">
-            Рассматриваю предложения в клиниках и сервисных компаниях.
-            Расскажите, что за оборудование и что с ним происходит — отвечу в течение дня.
+            Инженерный сервис, производство, видеомонтаж, склад и учёт.
+            Расскажите о задаче — отвечу в течение дня.
           </p>
 
           <div class="contact__actions">
-            <a class="btn btn--primary" href="mailto:pavel.novosadov@example.com">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-              pavel.novosadov@example.com
+            <a class="btn btn--primary" href="mailto:novosadovpavel80@gmail.com">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              novosadovpavel80@gmail.com
             </a>
-            <button class="btn btn--ghost" id="copy-email" type="button" data-email="pavel.novosadov@example.com">Скопировать адрес</button>
+            <button class="btn btn--ghost" id="copy-email" type="button" data-email="novosadovpavel80@gmail.com">Скопировать адрес</button>
           </div>
 
-          <ul class="socials">
-            <li><a href="https://t.me/" target="_blank" rel="noopener noreferrer">Telegram</a></li>
-            <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-            <li><a href="#" target="_blank" rel="noopener noreferrer">Резюме (PDF)</a></li>
+          <ul class="contact__meta">
+            <li>Минск · выезды по Беларуси</li>
+            <li>Русский · English (A1)</li>
+            <li>Резюме и сканы — по запросу</li>
           </ul>
         </div>
       </div>
@@ -376,7 +618,8 @@
 
   <footer class="footer">
     <div class="container footer__inner">
-      <p>© <span id="year">2026</span> Павел Новосадов. Сделано вручную, без конструкторов.</p>
+      <p>© <span id="year">2026</span> Павел Новосадов</p>
+      <p class="footer__tech">HTML · CSS · JavaScript, без конструкторов</p>
       <a href="#top">Наверх ↑</a>
     </div>
   </footer>

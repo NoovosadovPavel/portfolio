@@ -20,9 +20,9 @@
     <path d="M0 120h1200M0 240h1200M0 360h1200M0 480h1200"/>
     <path d="M120 0v630M240 0v630M360 0v630M480 0v630M600 0v630M720 0v630M840 0v630M960 0v630M1080 0v630"/>
   </g>
-  <text x="80" y="200" font-family="Manrope, Segoe UI, sans-serif" font-size="26" font-weight="700" fill="#43d9c4" letter-spacing="4">ПОРТФОЛИО</text>
-  <text x="80" y="312" font-family="Manrope, Segoe UI, sans-serif" font-size="80" font-weight="800" fill="#eef0f6">Павел Новосадов</text>
-  <text x="80" y="376" font-family="Manrope, Segoe UI, sans-serif" font-size="34" font-weight="600" fill="#9aa1b4">Инженер по медицинскому оборудованию</text>
+  <text x="80" y="200" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="26" font-weight="700" fill="#43d9c4" letter-spacing="4">ПОРТФОЛИО</text>
+  <text x="80" y="312" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="80" font-weight="800" fill="#eef0f6">Павел Новосадов</text>
+  <text x="80" y="376" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="34" font-weight="600" fill="#9aa1b4">Инженер · Техник · Видеомонтажёр</text>
   <rect x="80" y="424" width="180" height="6" rx="3" fill="url(#g)"/>
-  <text x="80" y="506" font-family="JetBrains Mono, monospace" font-size="24" fill="#6b7288">Медтехника · Сервис · Метрология</text>
+  <text x="80" y="506" font-family="DejaVu Sans Mono, monospace" font-size="24" fill="#6b7288">Сервис · Производство · Видео · Учёт</text>
 </svg>
