@@ -40,6 +40,7 @@ portfolio/
 ├── robots.txt
 ├── sitemap.xml
 ├── certificates/           # сканы сертификатов и папка previews/
+├── showreels/              # видео для будущего раздела Showreel и постеры
 ├── .nojekyll               # отключает обработку Jekyll на GitHub Pages
 ├── assets/
 │   ├── css/style.css       # стили и дизайн-токены
