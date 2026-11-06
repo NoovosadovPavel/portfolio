@@ -23,7 +23,7 @@
     root.setAttribute("data-theme", theme);
     themeToggle?.setAttribute("aria-pressed", String(theme === "light"));
     const meta = $('meta[name="theme-color"]');
-    if (meta) meta.setAttribute("content", theme === "light" ? "#f7f7fb" : "#0a0b10");
+    if (meta) meta.setAttribute("content", theme === "light" ? "#eefaf7" : "#12363a");
   };
 
   applyTheme(getPreferredTheme());

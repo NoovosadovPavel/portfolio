@@ -1,28 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0a0b10"/>
-      <stop offset="1" stop-color="#131a30"/>
+      <stop offset="0" stop-color="#102c2f"/>
+      <stop offset="1" stop-color="#0a2427"/>
     </linearGradient>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#7c6cff"/>
-      <stop offset="0.6" stop-color="#43d9c4"/>
-      <stop offset="1" stop-color="#ffd66b"/>
+      <stop offset="0" stop-color="#2dd4bf"/>
+      <stop offset="0.6" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#99f6e4"/>
     </linearGradient>
     <radialGradient id="glow" cx="0.85" cy="0.1" r="0.7">
-      <stop offset="0" stop-color="#43d9c4" stop-opacity="0.35"/>
-      <stop offset="1" stop-color="#43d9c4" stop-opacity="0"/>
+      <stop offset="0" stop-color="#2dd4bf" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#2dd4bf" stop-opacity="0"/>
     </radialGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
   <rect width="1200" height="630" fill="url(#glow)"/>
-  <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="1">
+  <g stroke="#a7f3d0" stroke-opacity="0.07" stroke-width="1">
     <path d="M0 120h1200M0 240h1200M0 360h1200M0 480h1200"/>
     <path d="M120 0v630M240 0v630M360 0v630M480 0v630M600 0v630M720 0v630M840 0v630M960 0v630M1080 0v630"/>
   </g>
-  <text x="80" y="200" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="26" font-weight="700" fill="#43d9c4" letter-spacing="4">ПОРТФОЛИО</text>
-  <text x="80" y="312" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="80" font-weight="800" fill="#eef0f6">Павел Новосадов</text>
-  <text x="80" y="376" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="34" font-weight="600" fill="#9aa1b4">Инженер · Техник · Видеомонтажёр</text>
+  <text x="80" y="200" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="26" font-weight="700" fill="#5eead4" letter-spacing="4">ПОРТФОЛИО</text>
+  <text x="80" y="312" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="80" font-weight="800" fill="#eafcf8">Павел Новосадов</text>
+  <text x="80" y="376" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="34" font-weight="600" fill="#a9d5d0">Инженер · Техник · Видеомонтажёр</text>
   <rect x="80" y="424" width="180" height="6" rx="3" fill="url(#g)"/>
-  <text x="80" y="506" font-family="DejaVu Sans Mono, monospace" font-size="24" fill="#6b7288">Сервис · Производство · Видео · Учёт</text>
+  <text x="80" y="506" font-family="DejaVu Sans Mono, monospace" font-size="24" fill="#7fafab">Сервис · Производство · Видео · Учёт</text>
 </svg>
