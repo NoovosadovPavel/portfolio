@@ -556,6 +556,15 @@ ul { list-style: none; padding: 0; }
 
 .about__text .link-arrow { margin-top: 28px; }
 
+.about__text p.about__made {
+  margin-top: 18px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-dim);
+  padding-left: 14px;
+  border-left: 1px solid var(--border-strong);
+}
+
 .link-arrow {
   display: inline-flex;
   align-items: center;
@@ -598,6 +607,12 @@ ul { list-style: none; padding: 0; }
 .facts > div:last-child { padding-bottom: 0; border-bottom: 0; }
 .facts dt { font-size: 13px; color: var(--text-dim); white-space: nowrap; }
 .facts dd { font-size: 13.5px; font-weight: 600; text-align: right; }
+.facts dd a {
+  color: inherit;
+  border-bottom: 1px solid var(--border-strong);
+  transition: color 0.25s, border-color 0.25s;
+}
+.facts dd a:hover { color: var(--accent-2); border-color: var(--accent-2); }
 
 /* ---------- Directions ---------- */
 .directions {
@@ -1070,6 +1085,35 @@ ul { list-style: none; padding: 0; }
   margin-top: 34px;
 }
 
+.messengers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.messenger {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 18px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  transition: color 0.25s, border-color 0.25s, background-color 0.25s, transform 0.25s var(--ease);
+}
+.messenger svg { flex-shrink: 0; color: var(--accent-2); }
+.messenger:hover {
+  color: var(--text);
+  border-color: var(--accent);
+  background: var(--surface-2);
+  transform: translateY(-2px);
+}
+
 .contact__meta {
   display: flex;
   flex-wrap: wrap;
@@ -1160,7 +1204,7 @@ ul { list-style: none; padding: 0; }
   .container { padding-inline: 18px; }
   .btn { width: 100%; }
   .hero__cta, .contact__actions { flex-direction: column; }
-  .hero__roles { letter-spacing: 0.08em; }
+  .hero__roles { letter-spacing: 0.06em; font-size: 0.82rem; }
   .facts > div { flex-direction: column; gap: 2px; }
   .facts dd { text-align: left; }
   .footer__inner { flex-direction: column; align-items: flex-start; }
