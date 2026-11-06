@@ -748,6 +748,85 @@ ul { list-style: none; padding: 0; }
 }
 .tags--sm li { font-size: 12px; padding: 4px 10px; }
 
+/* ---------- Showreel ---------- */
+.showreel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 0.8fr);
+  gap: 44px;
+  align-items: start;
+}
+
+.showreel__media {
+  position: relative;
+  background: #000;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.showreel__video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
+
+.showreel__body { padding-top: 4px; }
+.showreel__lead {
+  max-width: 46ch;
+  color: var(--text-muted);
+}
+
+.showreel__subtitle {
+  margin-top: 28px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-2);
+}
+
+.showreel__tags { margin-top: 12px; }
+
+.showreel__list {
+  display: grid;
+  gap: 9px;
+  margin-top: 14px;
+}
+.showreel__list li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+.showreel__list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.showreel__note {
+  margin-top: 24px;
+  padding: 14px 16px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--text-muted);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 2px solid var(--accent-2);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.showreel .link-arrow { margin-top: 22px; }
+
 /* ---------- Experience ---------- */
 .work {
   display: grid;
@@ -1173,6 +1252,8 @@ ul { list-style: none; padding: 0; }
 @media (max-width: 900px) {
   .about { grid-template-columns: 1fr; gap: 36px; }
   .directions { grid-template-columns: 1fr; }
+  .showreel { grid-template-columns: 1fr; gap: 30px; }
+  .showreel__body { max-width: 62ch; }
   .work__item { grid-template-columns: 1fr; }
   .work__side {
     display: flex;

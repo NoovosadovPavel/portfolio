@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Павел Новосадов — инженер, техник, IT-специалист, видеомонтажёр</title>
-  <meta name="description" content="Портфолио Павла Новосадова: инженерный сервис и медицинская техника, IT и разработка, видеомонтаж, склад и учёт. Навыки, опыт, сертификаты, курсы и контакты." />
+  <meta name="description" content="Портфолио Павла Новосадова: инженерный сервис и медицинская техника, IT и разработка, видеомонтаж и showreel, склад и учёт. Навыки, опыт, сертификаты, курсы и контакты." />
   <meta name="author" content="Павел Новосадов" />
   <meta name="theme-color" content="#12363a" />
 
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Павел Новосадов — инженер, техник, IT-специалист, видеомонтажёр" />
-  <meta property="og:description" content="Инженерный сервис, IT и разработка, видеомонтаж и складской учёт. Опыт, навыки, сертификаты, курсы и контакты." />
+  <meta property="og:description" content="Инженерный сервис, IT и разработка, видеомонтаж и showreel, складской учёт. Опыт, навыки, сертификаты, курсы и контакты." />
   <meta property="og:image" content="https://noovosadovpavel.github.io/portfolio/assets/img/og-cover.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -66,7 +66,16 @@
       "Git и GitHub Actions",
       "Power BI",
       "Управление персоналом"
-    ]
+    ],
+    "subjectOf": {
+      "@type": "VideoObject",
+      "name": "Showreel — видеомонтаж Павла Новосадова",
+      "description": "Демонстрационный ролик: нарезка под музыку, титры, цветокоррекция, хромакей и моушн-графика. Видео для бизнеса, автомобилей, кулинарии, детских праздников, интервью и музыкальных клипов.",
+      "thumbnailUrl": "https://noovosadovpavel.github.io/portfolio/showreels/poster.jpg",
+      "contentUrl": "https://noovosadovpavel.github.io/portfolio/showreels/showreel.mp4",
+      "uploadDate": "2023-11-10",
+      "duration": "PT59S"
+    }
   }
   </script>
 </head>
@@ -87,6 +96,7 @@
         <a href="#directions" class="nav__link">Направления</a>
         <a href="#skills" class="nav__link">Навыки</a>
         <a href="#experience" class="nav__link">Опыт</a>
+        <a href="#showreel" class="nav__link">Showreel</a>
         <a href="#certificates" class="nav__link">Сертификаты</a>
         <a href="#education" class="nav__link">Курсы</a>
         <a href="#contact" class="nav__link">Контакты</a>
@@ -252,7 +262,7 @@
               к публикации. Профильный курс по видеомонтажу; готов
               выполнить тестовое задание.
             </p>
-            <a class="direction__link" href="#skills">Смотреть навыки <span aria-hidden="true">→</span></a>
+            <a class="direction__link" href="#showreel">Смотреть showreel <span aria-hidden="true">→</span></a>
           </article>
 
           <article class="direction reveal" data-track="warehouse" style="--delay: 180ms">
@@ -532,12 +542,79 @@
       </div>
     </section>
 
-    <!-- CERTIFICATES -->
-    <section class="section" id="certificates">
+    <!-- SHOWREEL -->
+    <section class="section" id="showreel">
       <div class="container">
         <div class="section__head section__head--row reveal">
           <div>
-            <span class="section__kicker">05 — Сертификаты</span>
+            <span class="section__kicker">05 — Showreel</span>
+            <h2 class="section__title">Видеомонтаж в деле</h2>
+          </div>
+          <p class="section__note">58 секунд · 1280×720 · 2023</p>
+        </div>
+
+        <div class="showreel">
+          <div class="showreel__media reveal">
+            <video
+              class="showreel__video"
+              controls
+              preload="metadata"
+              playsinline
+              poster="showreels/poster.jpg"
+              width="1280"
+              height="720"
+              aria-label="Showreel: примеры видеомонтажа"
+            >
+              <source src="showreels/showreel.mp4" type="video/mp4" />
+              Ваш браузер не поддерживает видео.
+              <a href="showreels/showreel.mp4">Открыть файл</a>.
+            </video>
+          </div>
+
+          <div class="showreel__body reveal" style="--delay: 80ms">
+            <p class="showreel__lead">
+              Демонстрационный ролик о том, что я умею в видеомонтаже:
+              динамичная нарезка, титры и подписи, цветокоррекция, работа
+              со звуком и простая моушн-графика.
+            </p>
+
+            <h3 class="showreel__subtitle">В ролике</h3>
+            <ul class="tags showreel__tags">
+              <li>Видео для бизнеса</li>
+              <li>Автомобили</li>
+              <li>Домашние животные</li>
+              <li>Кулинария</li>
+              <li>Детские праздники</li>
+              <li>Интервью</li>
+              <li>Музыкальные видео</li>
+              <li>Хромакей</li>
+            </ul>
+
+            <h3 class="showreel__subtitle">Что показано</h3>
+            <ul class="showreel__list">
+              <li>Ритм и нарезка под музыку</li>
+              <li>Титры, подписи и смысловые акценты</li>
+              <li>Цветокоррекция и единый вид кадров</li>
+              <li>Хромакей, вставки и моушн-элементы</li>
+              <li>Подготовка под YouTube и соцсети</li>
+            </ul>
+
+            <p class="showreel__note">
+              Нужен ролик под вашу задачу? Соберу рекламу, презентацию,
+              видео для YouTube или Reels/Shorts.
+            </p>
+            <a class="link-arrow" href="#contact">Обсудить видео <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section class="section section--alt" id="certificates">
+      <div class="container">
+        <div class="section__head section__head--row reveal">
+          <div>
+            <span class="section__kicker">06 — Сертификаты</span>
             <h2 class="section__title">Документы об обучении</h2>
           </div>
           <p class="section__note">Клик по превью открывает скан в полном размере.</p>
@@ -704,11 +781,11 @@
     </section>
 
     <!-- EDUCATION -->
-    <section class="section section--alt" id="education">
+    <section class="section" id="education">
       <div class="container">
         <div class="section__head section__head--row reveal">
           <div>
-            <span class="section__kicker">06 — Курсы</span>
+            <span class="section__kicker">07 — Курсы</span>
             <h2 class="section__title">Повышение квалификации</h2>
           </div>
           <p class="section__note">9 курсов повышения квалификации</p>
@@ -819,7 +896,7 @@
     <section class="section section--contact" id="contact">
       <div class="container">
         <div class="contact reveal">
-          <span class="section__kicker">07 — Контакты</span>
+          <span class="section__kicker">08 — Контакты</span>
           <h2 class="contact__title">Открыт к предложениям</h2>
           <p class="contact__lead">
             Инженерный сервис, IT и разработка, видеомонтаж, склад и учёт.
